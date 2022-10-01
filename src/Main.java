@@ -18,6 +18,20 @@ public class Main {
 	static List<ProblemsBeen> list=null;
 	static EmployeeBeen employeeBeen=null;
 	static Employeelmpl employeelmpl=new Employeelmpl();
+	public static void loding() {
+    	System.out.println();
+    	System.out.print("Loading"+"\u001B[32m");
+        for(int i=0; i<10; i++) {
+        	System.out.print(".");
+        	try {
+				Thread.sleep(400);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+        }
+        System.out.print("!"+"\u001B[0m");
+       
+    }
 		public static void employeMethod() {
 			while(true) {
 				System.out.println("\r\n"
@@ -75,8 +89,40 @@ public class Main {
 			
 			
 		}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+		loding();
+		System.out.println();
+		System.out.println("\t\t\t ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░▒▒▒▒░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒░▒▒▒▒▒▒░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░▒▒▒░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░▓▓\r\n"
+					+ "\t\t\t ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+					+ "\t\t\t _______▒__________▒▒▒▒▒▒▒▒▒▒▒▒▒▒\r\n"
+					+ "\t\t\t ______▒_______________▒▒▒▒▒▒▒▒\r\n"
+					+ "\t\t\t _____▒________________▒▒▒▒▒▒▒▒\r\n"
+					+ "\t\t\t ____▒___________▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\r\n"
+					+ "\t\t\t ___▒\r\n"
+					+ "\t\t\t __▒______▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+					+ "\t\t\t _▒______▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓\r\n"
+					+ "\t\t\t ▒▒▒▒___▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓\r\n"
+					+ "\t\t\t ▒▒▒▒__▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓\r\n"
+					+ "\t\t\t ▒▒▒__▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+					+ "\t\t\t ▒▒\r\n"
+					+ "");
+		Thread.sleep(800);
 		System.out.println("==============\r\n"
 				+ "█▀▀█ █▀▀▄ █░░ ░▀░ █▀▀▄ █▀▀ 　 █░░█ █▀▀█ █▀▀█ █▀▀▄ █░░░█ █▀▀█ █▀▀█ █▀▀ 　 █▀▀█ █▀▀▄ █▀▀▄ \r\n"
 				+ "█░░█ █░░█ █░░ ▀█▀ █░░█ █▀▀ 　 █▀▀█ █▄▄█ █▄▄▀ █░░█ █▄█▄█ █▄▄█ █▄▄▀ █▀▀ 　 █▄▄█ █░░█ █░░█ \r\n"
@@ -87,24 +133,34 @@ public class Main {
 				+ "▀▀▀ ▀▀▀▀ ▀░░ ░░▀░░ ░▀░▀░ ▀░░▀ ▀░▀▀ ▀▀▀ 　 ▀▀▀ ░▀▀▀ █▀▀▀ █▀▀▀ ▀▀▀▀ ▀░▀▀ ░░▀░░ 　 ▀▀▀ ▄▄▄█ ▀▀▀ ░░▀░░ ▀▀▀ ▀░░░▀======================");
 		while(true) {
 			Scanner sc=new Scanner(System.in);
-			
-			System.out.println("\u001B[32m"+"Enter Your Choice"+"\u001B[0m");
-			System.out.println("\u001B[34m"+"1.HOD");
-			System.out.println("2 Enginer");
-			System.out.println("3 Employee"+"\u001B[0m");
+			Thread.sleep(600);
+			System.out.println("\u001B[32m"+"\b Enter Your Choice"+"\u001B[0m");
+			Thread.sleep(600);
+			System.out.println("\u001B[34m"+"1.\b HOD");
+			Thread.sleep(600);
+			System.out.println("2 \b Enginer");
+			Thread.sleep(600);
+			System.out.println("3 \b Employee"+"\u001B[0m");
 			int choice=sc.nextInt();
 			switch (choice) {
 			case 1:
+//				Thread.sleep(600);
+				loding();
 					System.out.println("==================\r\n"
 							+ "▒█░░▒█ █▀▀ █░░ █▀▀█ █▀▀ █▀▄▀█ █▀▀ 　 ▀▀█▀▀ █▀▀█ 　 ▒█░▒█ ▒█▀▀▀█ ▒█▀▀▄ 　 ▒█▀▀█ █▀▀█ █▀▀▀ █▀▀ \r\n"
 							+ "▒█▒█▒█ █▀▀ █░░ █░░█ █░░ █░▀░█ █▀▀ 　 ░▒█░░ █░░█ 　 ▒█▀▀█ ▒█░░▒█ ▒█░▒█ 　 ▒█▄▄█ █▄▄█ █░▀█ █▀▀ \r\n"
 							+ "▒█▄▀▄█ ▀▀▀ ▀▀▀ ▀▀▀▀ ▀▀▀ ▀░░░▀ ▀▀▀ 　 ░▒█░░ ▀▀▀▀ 　 ▒█░▒█ ▒█▄▄▄█ ▒█▄▄▀ 　 ▒█░░░ ▀░░▀ ▀▀▀▀ ▀▀▀ ===========================");
 					System.out.println("\u001B[32m"+"Enter Your Choice"+"\u001B[0m");
+					Thread.sleep(600);
 					System.out.println("\u001B[34m"+"1 Login");
+					Thread.sleep(600);
 					System.out.println("2 Back"+"\u001B[0m");
+					Thread.sleep(600);
 					int hodChoice=sc.nextInt();
 					if(hodChoice==1) {
+						Thread.sleep(600);
 						System.out.println("Enter Your Username:) ");
+						
 						String usernameString=sc.next();
 						System.out.println("Enter Your Password:) ");
 						String passwordString=sc.next();
@@ -113,14 +169,23 @@ public class Main {
 							if(res!=null) {
 								System.out.println("Login sucessfully");
 								while(true) {
+									Thread.sleep(600);
 									System.out.println("========= welcome "+res.toUpperCase()+" ===============");
+									Thread.sleep(600);
 									System.out.println("\u001B[32m"+"Enter Your Choice"+"\u001B[0m");
+									Thread.sleep(600);
 									System.out.println("\u001B[34m"+"1 Register a new Enginer");
+									Thread.sleep(600);
 									System.out.println("2 see all the Enginer List");
+									Thread.sleep(600);
 									System.out.println("3 Delete Enginer");
+									Thread.sleep(600);
 									System.out.println("4 See all The Problems");
+									Thread.sleep(600);
 									System.out.println("5 Assign Problem  to the Enginer");
+									Thread.sleep(600);
 									System.out.println("6 Enter for Exit"+"\u001B[0m");
+									Thread.sleep(600);
 									int hodChoic=sc.nextInt();
 									if(hodChoic==1) {
 									String s=hodobjHodImpl.hodRagisterEng();
@@ -195,6 +260,8 @@ public class Main {
 					
 				break;
 			case 2:
+//				Thread.sleep(600);
+				loding();
 				System.out.println("\r\n"
 						+ "▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
 						+ "▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
@@ -207,19 +274,26 @@ public class Main {
 						+ "▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
 						+ "▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
 						+ "░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░");
+				Thread.sleep(600);
 				System.out.println("\u001B[32m"+"Enter Your Choice"+"\u001B[0m");
+				Thread.sleep(600);
 				System.out.println("\u001B[34m"+"1 Login");
+				Thread.sleep(600);
 				System.out.println("2 Back"+"\u001B[0m");
+				Thread.sleep(600);
 				int engchoice=sc.nextInt();
 				if(engchoice==1) {
 					engobj= engerlmplobj.engLogin();
 					if(engobj!=null) {
+						Thread.sleep(600);
 						while(true) {
 							System.out.println("================== Welcome "+ engobj.getEngNaame() +"=====================");
 							System.out.println("\u001B[32m"+"Enter Your Choice"+"\u001B[0m");
+							Thread.sleep(600);
 							System.out.println("\u001B[34m"+"1 check Your all complains");
 							System.out.println("2 update Your work ");
 							System.out.println("3 see pase complains");
+							Thread.sleep(600);
 							System.out.println("4 update Your password");
 							System.out.println("5 Exit"+"\u001B[0m");
 							int engoptionChoice=sc.nextInt();
@@ -305,6 +379,8 @@ public class Main {
 				
 				break;
 			case 3:
+//				Thread.sleep(600);
+				loding();
 				System.out.println("\r\n"
 						+ "▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
 						+ "▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
@@ -317,16 +393,20 @@ public class Main {
 						+ "▒█▀▀█ █▀▀█ █▀▀▀ █▀▀ █▀▀█ 　 ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
 						+ "▒█▄▄█ █▄▄█ █░▀█ █▀▀ █▄▄▀ 　 ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ \r\n"
 						+ "▒█░░░ ▀░░▀ ▀▀▀▀ ▀▀▀ ▀░▀▀ 　 ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░");
+				Thread.sleep(600);
 				System.out.println("\u001B[32m"+"Enter Your Choice"+"\u001B[0m");
+				Thread.sleep(600);
 				System.out.println("\u001B[34m"+"1 Register");
+				Thread.sleep(600);
 				System.out.println("2 Login");
+				Thread.sleep(600);
 				System.out.println("3 Back"+"\u001B[0m");
 				int empchoice=sc.nextInt();
 				if(empchoice==1) {
 					employeeBeen=employeelmpl.empRagister();
 					if(employeeBeen!=null) {
 //						employeMethod();
-						
+						Thread.sleep(600);
 						while(true) {
 							System.out.println("Now You Have to login");
 							System.out.println("\u001B[34m"+"1 Login");
@@ -355,6 +435,7 @@ public class Main {
 					}
 				}
 				else if(empchoice==2) {
+					
 					employeeBeen=employeelmpl.empLogin();
 					if(employeeBeen!=null) {
 						employeMethod();
@@ -374,6 +455,7 @@ public class Main {
 				break;
 				
 			default:
+				loding();
 				throw new IllegalArgumentException("\033[0;31m"+"Unexpected value: "+"\033[0m"+ + choice);
 			}
 			
