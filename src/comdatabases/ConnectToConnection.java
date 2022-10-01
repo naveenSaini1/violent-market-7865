@@ -8,7 +8,7 @@ public class ConnectToConnection {
 	public static Connection provideConnection() {
 		Connection conn = null;
 		try {
-			Class.forName("jdbc.mysql.cj.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

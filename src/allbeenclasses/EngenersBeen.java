@@ -1,29 +1,37 @@
 package allbeenclasses;
 
 public class EngenersBeen {
-	private int eid;
-	private String engNaame;
-	private String password;
-	private String role;
-	public EngenersBeen(int eid, String engNaame, String password, String role) {
-		this.eid = eid;
-		this.engNaame = engNaame;
-		this.password = password;
-		this.role = role;
+	@Override
+	public String toString() {
+		return "EngenersBeen [enid=" + enid + ", engNaame=" + engNaame + ", engUsername=" + engUsername + ", password="
+				+ password + ", en_role=" + en_role + "]";
 	}
-	public EngenersBeen(String engNaame, String password, String role) {
+	private int enid;
+	private String engNaame;
+	private String engUsername;
+	private String password;
+	private String en_role;
+	public EngenersBeen(int enid, String engNaame,String engUsername, String password, String en_role) {
+		this.enid = enid;
 		this.engNaame = engNaame;
 		this.password = password;
-		this.role = role;
+		this.engUsername=engUsername;
+		this.en_role = en_role;
+	}
+	public EngenersBeen(String engNaame,String engUsername, String password, String en_role) {
+		this.engNaame = engNaame;
+		this.engUsername=engUsername;
+		this.password = password;
+		this.en_role = en_role;
 	}
 	public EngenersBeen() {
 		
 	}
 	public int getRoll() {
-		return eid;
+		return enid;
 	}
 	public void setRoll(int roll) {
-		this.eid = roll;
+		this.enid = roll;
 	}
 	public String getEngNaame() {
 		return engNaame;
@@ -38,10 +46,22 @@ public class EngenersBeen {
 		this.password = password;
 	}
 	public String getRole() {
-		return role;
+		return en_role;
 	}
 	public void setRole(String role) {
-		this.role = role;
+		this.en_role = role;
+	}
+	public int getEid() {
+		return enid;
+	}
+	public void setEid(int eid) {
+		this.enid = eid;
+	}
+	public String getEngUsername() {
+		return engUsername;
+	}
+	public void setEngUsername(String engUsername) {
+		this.engUsername = engUsername;
 	}
 	
 
