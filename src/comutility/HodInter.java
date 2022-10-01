@@ -2,14 +2,17 @@ package comutility;
 
 import java.util.List;
 
+import UserExectiion.classNotFound;
 import allbeenclasses.EngenersBeen;
+import allbeenclasses.ProblemsBeen;
 
 public interface HodInter {
-	public String hodLogin(EngenersBeen eng);
-	public String hodRagisterEng(String username,String password);
+	public String hodlogin(String username,String password) throws classNotFound;
+	public String hodRagisterEng();
 	public List<EngenersBeen> getDetailsengs();
-	public String deleteEng(int eid);
-	
+	public String deleteEng();
+	public List<ProblemsBeen> allProblems();
+	public String assigncomplainToEng();
 	
 
 }

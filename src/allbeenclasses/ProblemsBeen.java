@@ -1,47 +1,51 @@
 package allbeenclasses;
 
 public class ProblemsBeen {
-	private int pid;
-	private String role;
-	private String status;
-	private String engSetName=null;
-	public ProblemsBeen(int pid, String role, String status,String engSetName) {
-		this.pid = pid;
-		this.role = role;
-		this.status = status;
-		this.engSetName=engSetName;
+	@Override
+	public String toString() {
+		return "ProblemsBeen [cid=" + cid + ", cname=" + cname + ", c_status=" + c_status + ", c_role=" + c_role + "]";
 	}
-	public ProblemsBeen(String role, String status) {
-		this.role = role;
-		this.status = status;
+	private int cid;
+	private String cname;
+	private String c_status;
+	private String c_role;
+	public ProblemsBeen(String cname, String c_status, String c_role) {
+		this.cname = cname;
+		this.c_status = c_status;
+		this.c_role = c_role;
+	}
+	public ProblemsBeen(int cid, String cname, String c_status, String c_role) {
+		this.cid = cid;
+		this.cname = cname;
+		this.c_status = c_status;
+		this.c_role = c_role;
 	}
 	public ProblemsBeen() {
-
+		super();
 	}
-	public int getPid() {
-		return pid;
+	public int getCid() {
+		return cid;
 	}
-	public void setPid(int pid) {
-		this.pid = pid;
+	public void setCid(int cid) {
+		this.cid = cid;
 	}
-	public String getRole() {
-		return role;
+	public String getCname() {
+		return cname;
 	}
-	public void setRole(String role) {
-		this.role = role;
+	public void setCname(String cname) {
+		this.cname = cname;
 	}
-	public String getStatus() {
-		return status;
+	public String getC_status() {
+		return c_status;
 	}
-	public void setStatus(String status) {
-		this.status = status;
+	public void setC_status(String c_status) {
+		this.c_status = c_status;
 	}
-	public String getEngSetName() {
-		return engSetName;
+	public String getC_role() {
+		return c_role;
 	}
-	public void setEngSetName(String engSetName) {
-		this.engSetName = engSetName;
+	public void setC_role(String c_role) {
+		this.c_role = c_role;
 	}
-
 
 }

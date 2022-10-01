@@ -2,15 +2,18 @@ package comutility;
 
 import java.util.List;
 
+import allbeenclasses.EngenersBeen;
 import allbeenclasses.ProblemsBeen;
 
 public interface EngInter {
-	public String engLogin(String username,String password);
-	public List<ProblemsBeen> getProblemAssignmed();
 	
-	public List<ProblemsBeen> getAllProblems();
-	public String engChangPassword(int eid);
+	public EngenersBeen engLogin();
+	public List<ProblemsBeen> getProblemAssignmed(EngenersBeen eng);
+	public String updateComplainStatus(int cid);
+	
+	public List<ProblemsBeen> getAllPassProblems(EngenersBeen eng);
 	
 	
-
+	public String engChangPassword(EngenersBeen eng);
+	
 }
