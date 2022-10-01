@@ -45,7 +45,7 @@ public class HodImpl implements HodInter {
 	public String hodRagisterEng() {
 		String res=null;
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter The Name Of Enginer");
+		System.out.println("\033[0;33m"+"Enter The Name Of Enginer");
 		String nameString=scanner.next();
 		System.out.println("Enter The UserName");
 		String usernameString=scanner.next();
@@ -112,7 +112,7 @@ public class HodImpl implements HodInter {
 	public String deleteEng() {
 		String res=null;
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter The userName of the Engienr");
+		System.out.println("\033[0;33m"+"Enter The userName of the Engienr");
 		String usernameString=scanner.next();
 		System.out.println("Enter The password of the Enginer");
 		String PasswordString=scanner.next();
@@ -161,7 +161,7 @@ public class HodImpl implements HodInter {
 	public String assigncomplainToEng() {
 		String res=null;
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter The Enginer Id");
+		System.out.println("\033[0;33m"+"Enter The Enginer Id");
 		int enId=scanner.nextInt();
 		System.out.println("Enter The complain Id");
 		int cid=scanner.nextInt();

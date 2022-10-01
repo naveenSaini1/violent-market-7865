@@ -54,8 +54,8 @@ public class EmpProblemClassbeen {
 	}
 	@Override
 	public String toString() {
-		return "EmpProblemClassbeen [name=" + name + ", en_role=" + en_role + ", cid=" + cid + ", cname=" + cname
-				+ ", c_status=" + c_status + ", c_role=" + c_role + "]";
+		return "| name: " + name + ", en_role: " + en_role + ", cid: " + cid + ", cname: " + cname
+				+ ", c_status: " + c_status + ", c_role: " + c_role + " |";
 	}
 	
 	

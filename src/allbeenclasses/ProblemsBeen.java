@@ -3,7 +3,7 @@ package allbeenclasses;
 public class ProblemsBeen {
 	@Override
 	public String toString() {
-		return "ProblemsBeen [cid=" + cid + ", cname=" + cname + ", c_status=" + c_status + ", c_role=" + c_role + "]";
+		return "| cid: " + cid + ", cname: " + cname + ", c_status: " + c_status + ", c_role: " + c_role + "|";
 	}
 	private int cid;
 	private String cname;

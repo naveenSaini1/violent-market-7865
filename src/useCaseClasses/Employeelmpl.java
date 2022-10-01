@@ -21,7 +21,7 @@ public class Employeelmpl implements EmpInter {
 		EmployeeBeen objBeen=null;
 		
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter Your username");
+		System.out.println("\033[0;33m"+"Enter Your username");
 		String usernameString=scanner.next();
 		System.out.println("Enter Your Password");
 		String passString=scanner.next();
@@ -52,7 +52,7 @@ public class Employeelmpl implements EmpInter {
 		EmployeeBeen objBeen=null;
 		
 	Scanner scanner=new Scanner(System.in);
-	System.out.println("Enter Your Name");
+	System.out.println("\033[0;33m"+"Enter Your Name");
 	String nameString=scanner.next();
 	System.out.println("Enter Your username");
 	String usernameString=scanner.next();
@@ -81,7 +81,7 @@ public class Employeelmpl implements EmpInter {
 	public String registerComplain(EmployeeBeen obj) {
 		String reString=null;
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter Your Complaing details");
+		System.out.println("\033[0;33m"+"Enter Your Complaing details");
 		String cnameString=scanner.nextLine();
 		System.out.println("Enter The complain chocie");
 		System.out.println("Enter 1 for Hardware");
