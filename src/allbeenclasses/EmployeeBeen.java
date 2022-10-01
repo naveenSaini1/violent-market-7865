@@ -3,8 +3,8 @@ package allbeenclasses;
 public class EmployeeBeen {
 	@Override
 	public String toString() {
-		return "EmployeeBeen [empId=" + empId + ", empName=" + empName + ", empUserEmail=" + empUserEmail
-				+ ", empPassword=" + empPassword + "]";
+		return "empId:)" + empId + ", empName:)" + empName + ", empUserEmail:)" + empUserEmail
+				+ ", empPassword:)" + empPassword + "";
 	}
 	private int empId;
 	private String empName;
