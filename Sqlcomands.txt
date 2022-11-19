@@ -25,3 +25,5 @@ create table emp_complain(em_emId int,c_cid int,foreign key(em_emId) references 
 mysql> select * from enginer INNER JOIN complain INNER JOIN eng_complain ON enginer.enId=eng_complain.enId and complain.cid=eng_complain.cid where complain.cid=3 group by enginer.name;
 
 select complain.cid,complain.cname,complain.c_status,complain.c_role from employee INNER JOIN complain INNER JOIN emp_complain ON employee.emId=emp_complain.em_emId and complain.cid=emp_complain.c_cid where employee.emId=1;
+to check port number
+SHOW GLOBAL VARIABLES LIKE 'PORT';
